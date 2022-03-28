@@ -18,7 +18,6 @@ module.exports = {
         loader: "html-loader",
         options: {
           sources: false,
-          minimize: false,
         },
       },
       {
