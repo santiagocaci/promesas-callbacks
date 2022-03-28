@@ -3,6 +3,11 @@ import './styles.css';
 
 const heroId = 'capi';
 
-searchHero(heroId, (heroe)=>{
-  console.log(heroe);
+searchHero(heroId, (err, heroe)=>{
+
+  if (err) {
+    console.error(err);
+  }else{
+    console.log( heroe );
+  }
 });
